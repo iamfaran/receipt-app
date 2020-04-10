@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fahrschule Star GmbH</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/bootstrap.css" media="all" />
+    <link rel="stylesheet" href="./css/style.css" media="all" />
+    <style type="text/css" media="print">
+      * {
+        -webkit-print-color-adjust: exact !important; /*Chrome, Safari */
+        color-adjust: exact !important; /*Firefox*/
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1 class="display-3 text-right receipt-at-sm receipt-font">
+          Quittung
+        </h1>
+        <div class="row mt-5">
+          <div class="col-lg-6 col-md-6 col-sm-6 logo-center-sm">
+            <img src="./images/Fahrschule_Star_13_CV.png" class="logo" alt="" />
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <!-- logo and table----------------------------------- -->
+            <table class="header-table table-blue">
+              <thead>
+                <tr class="">
+                  <th align="center">Nettowert</th>
+                  <th align="center">Fr.</th>
+                  <th align="center"><span class="amount"></span></th>
+                </tr>
+
+                <tr class="last-row">
+                  <th align="center">Gesamtbetrag</th>
+                  <th align="center">Fr.</th>
+                  <th align="center">
+                    <span class="amount"></span>
+                  </th>
+                </tr>
+              </thead>
+            </table>
+            <!-- logo and table----------------------------------- -->
+          </div>
+        </div>
+        <p class="font-weight-bold mt-5">
+          Nr.: &nbsp; &nbsp; &nbsp; &nbsp;#
+          <span class="nr-number">Unique</span>
+        </p>
+        <p class="para-red">
+          Gesamtbetrag in Worten: <br />
+          <span class="amount-to-words font-weight-bold ml-5"> </span>
+        </p>
+        <div class="text-center">
+          <button class="btn btn-outline-secondary" onclick="window.print()">
+            Save as Pdf
+          </button>
+        </div>
+
+        <p>
+          von: &nbsp;<span class="first-name font-weight-bold text-lg"></span
+          ><span class="last-name font-weight-bold text-lg"></span>
+        </p>
+
+        <div class="row mt-5">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <p>Buchungsvermerke / Anmerkungen:</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <img src="./images/signature.png" class="signature" alt="" />
+            <p>
+              Unterschrift des Empfãngers Wettingen,
+              <span class="date font-weight-bold"></span>
+            </p>
+            <p class="address">
+              <span class="company-name font-weight-bold text-center"
+                >Fahrschule Star GmbH</span
+              >
+              <br />
+              Landstrasse 20
+              <br />
+              5430 Wettingen
+            </p>
+          </div>
+
+          <!-- <div class="col-lg-3 col-md-3 col-sm-3">
+            
+          </div> -->
+        </div>
+      </div>
+    </section>
+    <script src="./number-to-words.js"></script>
+    <script src="./scripts/receipt.js"></script>
+  </body>
+</html>

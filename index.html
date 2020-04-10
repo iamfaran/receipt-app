@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fahrschule Star GmbH</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <section id="main" class="bg-light">
+      <div class="container d-flex justify-content-center h-100">
+        <div class="card bg-light p-5 my-auto card-style">
+          <div
+            class="card-header display-4 bg-light mb-5 text-center text-light"
+          >
+            <img src="./images/Fahrschule_Star_13_CV.png" alt="" class="logo" />
+          </div>
+          <form action="invoice.html" method="POST" class="details">
+            <div class="row">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-group form-control"
+                  placeholder="Vorname"
+                  name="firstName"
+                  required
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-group form-control"
+                  placeholder="Name"
+                  name="lastName"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Betrag"
+                    name="amount"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <input
+                  id="datePicker"
+                  type="date"
+                  class="form-group form-control mydate"
+                  name="date"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <button
+                  class="btn btn-red w-100 form-group"
+                  type="submit"
+                  name="register"
+                  value="submit"
+                >
+                  erstellen
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/7cb9dd92a1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/date.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
